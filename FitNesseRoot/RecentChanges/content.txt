@@ -1,4 +1,4 @@
-|TrafficLights.TrafficLightState.CarTrafficStates||18:42:07 Thu, Aug 16, 2012|
+|TrafficLights.TrafficLightState.CarTrafficStates||13:33:02 Fri, Aug 17, 2012|
 |TrafficLights.TrafficLightStates||18:15:41 Thu, Aug 16, 2012|
 |TrafficLights||17:54:17 Thu, Aug 16, 2012|
 |FrontPage||17:46:13 Thu, Aug 16, 2012|
