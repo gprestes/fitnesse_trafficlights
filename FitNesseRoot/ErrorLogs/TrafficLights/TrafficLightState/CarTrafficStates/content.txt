@@ -1,6 +1,6 @@
 !3 !-slim-!
-|'''Date: '''|!-11:50:03 AM (BRT) on Friday, August 17, 2012-!|
+|'''Date: '''|!-1:23:51 PM (BRT) on Friday, August 17, 2012-!|
 |'''Test Page: '''|.TrafficLights.TrafficLightState.CarTrafficStates|
-|'''Command: '''|!-java -cp fitnesse.jar:classes fitnesse.slim.SlimService  8087-!|
+|'''Command: '''|!-java -cp fitnesse.jar:classes fitnesse.slim.SlimService  8089-!|
 |'''Exit code: '''|!-0-!|
-|'''Time elapsed: '''|!-0.687 seconds-!|
+|'''Time elapsed: '''|!-0.568 seconds-!|
