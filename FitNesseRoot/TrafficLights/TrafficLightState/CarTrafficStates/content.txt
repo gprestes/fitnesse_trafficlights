@@ -2,3 +2,6 @@
 |previous state|next state? |
 |red           |red, yellow |
 |red, yellow   |green       |
+|green         |yellow      |
+|yellow        |red         |
+|invalid state |yellow blink|

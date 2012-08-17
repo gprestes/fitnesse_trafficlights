@@ -6,3 +6,4 @@ FitNesseRoot/files/testResults/*
 
 #Editor crap
 *.un~
+src/*.class
