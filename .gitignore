@@ -4,3 +4,5 @@
 #Logs
 FitNesseRoot/files/testResults/*
 
+#Editor crap
+*.un~
