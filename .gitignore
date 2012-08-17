@@ -1,0 +1,6 @@
+# Packages #
+*.zip
+
+#Logs
+FitNesseRoot/files/testResults/*
+
