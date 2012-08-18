@@ -4,5 +4,9 @@
 #Logs
 FitNesseRoot/files/testResults/*
 
-#Editor crap
+#VIM crap
 *.un~
+
+#IntelliJ
+src/.idea/
+src/Fitnesse.iml
