@@ -7,7 +7,7 @@ FitNesseRoot/files/testResults/*
 #VIM crap
 *.un~
 
-src/*.class
+classes/
 
 #IntelliJ
 src/.idea/
