@@ -18,7 +18,11 @@ public class LightStateEditorTest {
     public static List<Object[]> data() {
         return asList(new Object[][] {
             { "red", RED },
-            { "red, yellow", RED_YELLOW }
+            { "red, yellow", RED_YELLOW },
+            {"green", GREEN},
+            {"yellow", YELLOW},
+            {"yellow blink", UNKNOWN},
+            {"invalid state", UNKNOWN}
         });
     }
 
@@ -35,11 +39,5 @@ public class LightStateEditorTest {
     public void setAsText() {
         editor.setAsText(stateName);
         assertEquals(state, editor.getValue());
-    }
-
-    @Test
-    public void setRed() {
-        editor.setAsText("red");
-        assertEquals(LightState.RED, editor.getValue());
     }
 }

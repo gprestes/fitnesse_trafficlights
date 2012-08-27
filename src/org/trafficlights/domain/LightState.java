@@ -4,22 +4,18 @@ public enum LightState {
     RED("red") {
         public LightState next() { return RED_YELLOW; }
     },
-    RED_YELLOW {
+    RED_YELLOW("red, yellow") {
         public LightState next() { return GREEN; }
     },
-    GREEN {
+    GREEN("green") {
         public LightState next() { return YELLOW; }
     },
-    YELLOW {
+    YELLOW("yellow") {
         public LightState next() { return RED; }
     },
-    UNKNOWN;
+    UNKNOWN("yellow blink");
 
     String description;
-
-    private LightState() {
-        this("");
-    }
 
     private LightState(String description) {
         this.description = description;
