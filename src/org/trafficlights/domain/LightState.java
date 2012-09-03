@@ -27,4 +27,8 @@ public enum LightState {
     private LightState(String description) {
         this.description = description;
     }
+
+    public LightState next() {
+        return UNKNOWN;
+    }
 }
