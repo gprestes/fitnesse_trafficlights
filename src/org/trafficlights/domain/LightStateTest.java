@@ -17,24 +17,26 @@ public class LightStateTest {
     @Parameters
     public static List<Object[]> data() {
         return asList(new Object[][] {
-            { RED, RED_YELLOW },
-            { RED_YELLOW, GREEN },
-            { GREEN, YELLOW },
-            { YELLOW, RED },
-            { UNKNOWN, UNKNOWN }
+            { "red", RED },
+            { "red, yellow", RED_YELLOW },
+            { "green", GREEN },
+            { "yellow", YELLOW },
+            { "yellow blink", UNKNOWN },
+            { "invalid value", UNKNOWN }
         });
     }
 
-    private LightState previousState;
-    private LightState nextState;
+    private String stateName;
+    private LightState state;
 
-    public LightStateTest(LightState previousState, LightState nextState) {
-        this.previousState = previousState;
-        this.nextState = nextState;
+    public LightStateTest(String stateName, LightState state) {
+        this.stateName = stateName;
+        this.state = state;
     }
 
     @Test
-    public void testStateChange() {
-        assertEquals(nextState, previousState.next());
+    public void valueFor() {
+        assertEquals(state, LightState.valueFor(stateName));
     }
+
 }

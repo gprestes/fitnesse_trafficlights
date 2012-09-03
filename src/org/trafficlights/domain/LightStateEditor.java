@@ -4,12 +4,12 @@ import java.beans.PropertyEditorSupport;
 
 public class LightStateEditor extends PropertyEditorSupport {
 
+    public String getAsText() {
+        LightState state = (LightState) getValue();
+        return state.description;
+    }
+
     public void setAsText(String state) {
-        for (LightState lightState: LightState.values()) {
-            if (lightState.description.equals(state)) {
-                setValue(lightState);
-                return;
-            }
-        }
+        setValue(LightState.valueFor(state));
     }
 }

@@ -17,11 +17,14 @@ public enum LightState {
 
     String description;
 
-    private LightState(String description) {
-        this.description = description;
+    public static LightState valueFor(String stateName) {
+        for (LightState state: values()) {
+            if (state.description.equals(stateName)) return state;
+        }
+        return UNKNOWN;
     }
 
-    public LightState next() {
-        return UNKNOWN;
+    private LightState(String description) {
+        this.description = description;
     }
 }

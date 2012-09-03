@@ -21,8 +21,7 @@ public class LightStateEditorTest {
             { "red, yellow", RED_YELLOW },
             {"green", GREEN},
             {"yellow", YELLOW},
-            {"yellow blink", UNKNOWN},
-            {"invalid state", UNKNOWN}
+            {"yellow blink", UNKNOWN}
         });
     }
 
@@ -33,6 +32,12 @@ public class LightStateEditorTest {
     public LightStateEditorTest(String stateName, LightState state) {
         this.stateName = stateName;
         this.state = state;
+    }
+
+    @Test
+    public void getAsText() {
+        editor.setValue(state);
+        assertEquals(stateName, editor.getAsText());
     }
 
     @Test
