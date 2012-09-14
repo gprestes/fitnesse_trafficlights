@@ -1,4 +1,4 @@
-|TrafficLights.CrossingControl.ScenarioLibrary||23:49:13 Sun, Sep 09, 2012|
+|TrafficLights.CrossingControl.ScenarioLibrary||19:33:57 Fri, Sep 14, 2012|
 |TrafficLights.CrossingControl.TwoCarCrossings||23:49:03 Sun, Sep 09, 2012|
 |TrafficLights.SetUp||22:50:22 Fri, Sep 07, 2012|
 |TrafficLights.TrafficLightState.CarTrafficStates||22:50:15 Fri, Sep 07, 2012|
