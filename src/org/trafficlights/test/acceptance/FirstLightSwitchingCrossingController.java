@@ -4,9 +4,17 @@ import org.trafficlights.domain.LightState;
 
 public class FirstLightSwitchingCrossingController {
 
+    private CrossingValidator validator = new CrossingValidator();
+
     LightState firstState;
 
     LightState secondState;
+
+    private static class CrossingValidator {
+        public boolean isValidConfiguration(LightState firstState, LightState secondState) {
+            return  !LightState.UNKNOWN.equals(firstState) && LightState.RED.equals(secondState);
+        }
+    }
 
     public void setFirstLight(LightState state) {
         firstState = state;
@@ -21,15 +29,11 @@ public class FirstLightSwitchingCrossingController {
     }
 
     public void switchFirstLight() {
-        if (!isValidLightStateConfiguration()) {
+        if (!validator.isValidConfiguration(firstState, secondState)) {
             warningConfiguration();
             return;
         }
         firstState = firstState.next();
-    }
-
-    private boolean isValidLightStateConfiguration() {
-        return  !LightState.UNKNOWN.equals(firstState) && LightState.RED.equals(secondState);
     }
 
     private void warningConfiguration() {

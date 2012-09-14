@@ -1,6 +1,6 @@
 !3 !-slim-!
-|'''Date: '''|!-7:34:06 PM (BRT) on Friday, September 14, 2012-!|
+|'''Date: '''|!-8:12:17 PM (BRT) on Friday, September 14, 2012-!|
 |'''Test Page: '''|.TrafficLights.CrossingControl.TwoCarCrossings|
-|'''Command: '''|!-java -cp fitnesse.jar:classes fitnesse.slim.SlimService  8088-!|
+|'''Command: '''|!-java -cp fitnesse.jar:classes fitnesse.slim.SlimService  8091-!|
 |'''Exit code: '''|!-0-!|
-|'''Time elapsed: '''|!-1.445 seconds-!|
+|'''Time elapsed: '''|!-1.681 seconds-!|
